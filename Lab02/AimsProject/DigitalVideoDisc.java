@@ -1,5 +1,4 @@
-package App;
-
+package hust.soict.cybersec.aims.disc;
 public class DigitalVideoDisc {
     private String title;
     private String category;
