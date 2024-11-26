@@ -11,4 +11,4 @@ Because the changeTitle() method is modifying the title field of the jungleDVD o
 
 4. Write a toString() method for the DigitalVideoDisc class. What should be the return type of
 this method?
-The return type should be String
+The return type should be Strings
