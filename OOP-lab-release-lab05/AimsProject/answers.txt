@@ -1,1 +1,41 @@
-This lab does not have any questions
+1. Swing Components
+1.1 AWTAccumulator:
+
+The AWTAccumulator uses AWT components like Frame, Label, and TextField. It calculates a running sum of user input values. Event-handling is implemented using a named inner class with the ActionListener interface.
+1.2 SwingAccumulator:
+
+The SwingAccumulator uses Swing components like JFrame, JLabel, and JTextField. The difference is that Swing uses lightweight components added to the content pane, making it more flexible.
+1.3 Comparison:
+
+Top-level containers: AWT uses Frame, Swing uses JFrame.
+Component classes: AWT uses heavyweight classes (e.g., Label), while Swing uses lightweight alternatives (e.g., JLabel).
+Look and Feel: Swing supports a pluggable look and feel, whereas AWT depends on the native OS.
+2. Organizing Swing Components with Layout Managers
+NumberGrid: A NumberGrid is created using a JPanel with a grid layout for buttons (0-9, DEL, C). The event-handling modifies a JTextField display.
+3. Create GUI for AIMS Project
+3.1 View Store Screen:
+
+The View Store screen uses BorderLayout. The NORTH component contains a menu bar and header. The CENTER component is a grid of MediaStore panels.
+3.2 Event-Handling:
+Play Button: Displays a dialog to play media.
+Add to Cart Button: Adds the media to the cart.
+4. JavaFX API
+4.1 Painter Application:
+
+The application uses a Pane to draw with the mouse. Buttons are added for clearing and erasing. Event-handling is implemented in PainterController.
+5. View Cart Screen (JavaFX)
+FXML Design: A BorderPane is used. VBox contains the menu bar and cart label in the TOP. The CENTER contains a TableView for media items with columns for title, category, and cost.
+Interactivity: Buttons in the RIGHT allow "Place Order," and selected media can be "Played" or "Removed."
+6. Integrating JavaFX into Swing
+The CartScreen class embeds a JavaFX Scene in a JFrame using JFXPanel. This enables integration of JavaFX UI into the existing Swing application.
+7. Exception Handling
+7.1 PlayerException:
+
+The PlayerException is thrown when a media’s length is <= 0. This is implemented in the play() methods of DigitalVideoDisc and CompactDisc.
+7.2 Handling Exceptions:
+
+Use try-catch blocks in the Aims class and display meaningful error messages in dialogs for user feedback.
+8. Modify equals() Method in Media
+Two Media objects are equal if they have the same title. Implement checks for NullPointerException and ClassCastException.
+9. Update Diagrams
+Update the use-case diagram and class diagram to include GUI features and an exception hierarchy tree for PlayerException and related exceptions.
